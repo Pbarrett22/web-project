@@ -1,6 +1,6 @@
 # web-project
 <head>
-
+<title>My web page projet/about</title>
   
 </head>
 <body>
