@@ -4,7 +4,7 @@
   
 </head>
 <body>
-<div class="container">
+<span class="container">
   <nav>
   <ul class="bar">
     <li><a href="#"class="active">Home</a></li>
@@ -12,7 +12,7 @@
     <li><a href="#" class="active">Contact</a></li>
   </ul>
   </nav>
-</div>
+</span>
   .bar {
   background-color: rgb(102, 255, 255);
   width: 100%;
