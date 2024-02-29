@@ -27,3 +27,23 @@
   width: 100px;
   border-right: 1px solid rgb(0, 72, 186);
 }
+.bar li a {
+  color: blue;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-decoration: none;
+}
+
+.bar li a:hover {
+  background-color: rgb(0, 21, 16);
+}
+
+.bar li a.active {
+  background-color: rgb(255, 255, 255);
+  color: white;
+}
+
+</body>
