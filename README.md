@@ -7,9 +7,9 @@
 <span class="container">
   <nav>
   <ul class="bar">
-    <li><a href="#"class="active">Home</a></li>
-    <li><a href="#"class="active">About</a></li>
-    <li><a href="#" class="active">Contact</a></li>
+    <a href="#"class="active">Home</a></li>
+    <a href="#"class="active">About</a></li>
+    <a href="#" class="active">Contact</a></li>
   </ul>
   </nav>
 </span>
