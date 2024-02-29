@@ -45,7 +45,7 @@
   background-color: rgb(255, 255, 255);
   color: white;
 }
-<p1>
+<p1 style="color : red; font size: 15px">
 Hello my name is porter barrett I like to play video games and watch tv. I am a student at kennesaw state university and here is what I have expiernced in my time here.
 </p1>
 </body>
