@@ -4,7 +4,7 @@
   
 </head>
 <body>
-<div class="container">
+<span class="container">
   <nav>
   <ul class="bar">
     <li><a href="#"class="active">Home</a></li>
@@ -12,7 +12,7 @@
     <li><a href="#" class="active">Contact</a></li>
   </ul>
   </nav>
-</div>
+</span>
   .bar {
   background-color: rgb(102, 255, 255);
   width: 100%;
@@ -45,5 +45,7 @@
   background-color: rgb(255, 255, 255);
   color: white;
 }
-
+<p1>
+Hello my name is porter barrett I like to play video games and watch tv. I am a student at kennesaw state university and here is what I have expiernced in my time here.
+</p1>
 </body>
