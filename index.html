@@ -38,11 +38,14 @@
   color: white;
 }
 </style>
+
+</head>>
+<body>
 <header id="navbar">
   <nav class="navbar-container container">
     <a href="/" class="home-link">
       <div class="navbar-logo"></div>
-      Website Name
+      
     </a>
     <button type="button" id="navbar-toggle" aria-controls="navbar-menu" aria-label="Toggle menu" aria-expanded="false">
       <span class="icon-bar"></span>
@@ -58,7 +61,7 @@
 <li class="navbar-item"><a class="navbar-link" href="/index c.html">Contact</a></li>
 </ul>
 </nav>
-
+<script>
 const navbarToggle = navbar.querySelector("#navbar-toggle");
 const navbarMenu = document.querySelector("#navbar-menu");
 const navbarLinksContainer = navbarMenu.querySelector(".navbar-links");
@@ -73,8 +76,8 @@ navbarToggle.addEventListener("click", toggleNavbarVisibility);
 
 navbarLinksContainer.addEventListener("click", (e) => e.stopPropagation());
 navbarMenu.addEventListener("click", toggleNavbarVisibility);
-</head>
-<body>
+</script>
+
 <p>welcome to my web page project.1</p>
 </body>
 </html>
