@@ -1,5 +1,6 @@
 <html>
 <head>
+ 
 <title>My web page projet/home</title>
 
   <style>
@@ -53,7 +54,7 @@
       </button>
       <div id="navbar-menu" aria-labelledby="navbar-toggle">
   <ul class="bar">
-  <a href="#"class="active">Home=</a></li>
+  <a href="#"class="active">Home</a></li>
   
   <li class="navbar-item"><a class="navbar-link" href="/index a .html">About</a></li>
   
@@ -77,6 +78,34 @@
   navbarMenu.addEventListener("click", toggleNavbarVisibility);
 </script>
 <p>welcome to my web page contact page</p>
+
+<Script>var express = require('express'),
+  nodemailer = require("nodemailer");
+  app = express.createServer();
+  app.use(express.bodyParser());
+    app.post('/formProcess', function (req, res) {
+      var data=req.body;
+      var smtpTransport = nodemailer.createTransport("SMTP",{
+         service: "outlook", 
+         auth: {
+         user: "email@outlook.com",
+         pass: "outlookPassword"
+         }});
+  
+     smtpTransport.sendMail({  
+     from: "Sender Name <email@gmail.com>",
+     to: "Rporter barrett <pbarret9@students.kennesaw.edu>",
+     subject: "Emailing with nodemailer", 
+     html: "here your data goes" 
+      }, function(error, response){  
+           if(error){
+             console.log(error);
+          }else{
+             console.log("Message sent: " + res.message);
+         }
+  
+     smtpTransport.close(); 
+      }); });</Script>
 
 
 JavaScriptconst requiredField = document.getElementById("required-field"); if
