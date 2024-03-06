@@ -37,6 +37,7 @@
   background-color: rgb(255, 255, 255);
   color: white;
 }
+.background{background-color: maroon;}
 </style>
 
 </head>
@@ -54,7 +55,7 @@
       </button>
       <div id="navbar-menu" aria-labelledby="navbar-toggle">
   <ul class="bar">
-  <a href="#"class="active">Home</a></li>
+  <li class="navbar-item"><a href="#"class="active">Home</a></li>
   
   <li class="navbar-item"><a class="navbar-link" href="/index a .html">About</a></li>
   
@@ -62,41 +63,38 @@
   </ul>
 </div>
   <script>
-  const navbarToggle = navbar.querySelector("#navbar-toggle");
-  const navbarMenu = document.querySelector("#navbar-menu");
-  const navbarLinksContainer = navbarMenu.querySelector(".navbar-links");
+  const navbarToggle = navbar.querySelector("#navbar-item");
   let isNavbarExpanded = navbarToggle.getAttribute("aria-expanded") === "true";
   
   const toggleNavbarVisibility = () => {
     isNavbarExpanded = !isNavbarExpanded;
     navbarToggle.setAttribute("aria-expanded", isNavbarExpanded);
   };
-  
-  navbarToggle.addEventListener("click", toggleNavbarVisibility);
-  
+
+
   navbarLinksContainer.addEventListener("click", (e) => e.stopPropagation());
   navbarMenu.addEventListener("click", toggleNavbarVisibility);
 </script>
 <p>welcome to my web page contact page</p>
 
-<Script>var express = require('express'),
+<Script>var em = require('em'),
   nodemailer = require("nodemailer");
-  app = express.createServer();
-  app.use(express.bodyParser());
+  app = em.createServer();
+  app.use(ems.bodyParser());
     app.post('/formProcess', function (req, res) {
       var data=req.body;
-      var smtpTransport = nodemailer.createTransport("SMTP",{
+      var mail = nodemailer.createTransport("mail",{
          service: "outlook", 
          auth: {
          user: "email@outlook.com",
          pass: "outlookPassword"
          }});
   
-     smtpTransport.sendMail({  
-     from: "Sender Name <email@gmail.com>",
+     mail.sendMail({  
+     from: "Sender Name <>",
      to: "Rporter barrett <pbarret9@students.kennesaw.edu>",
-     subject: "Emailing with nodemailer", 
-     html: "here your data goes" 
+     subject: "Emailing with nodemailer to repsipant", 
+     html: "here your question goes" 
       }, function(error, response){  
            if(error){
              console.log(error);
@@ -104,12 +102,13 @@
              console.log("Message sent: " + res.message);
          }
   
-     smtpTransport.close(); 
-      }); });</Script>
+     mail.close(); 
+      }); });
 
 
-JavaScriptconst requiredField = document.getElementById("required-field"); if
-(requiredField.value === "") { // Display an error message. }
+mail = document.getElementById("thank you"); if
+(requiredField.value === "");
 
+</Script>
 </body>
 </html>
