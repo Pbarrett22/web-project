@@ -1,7 +1,6 @@
 <html>
 <head>
-<title>My web page projet/home</title>
-
+<title>My web page projet/home</title> <!-- this is the title -->
 
   <style>
  .bar {
@@ -37,50 +36,50 @@
   background-color: rgb(255, 255, 255);
   color: white;
 }
-
 </style>
-
-</head>>
-<body style="background-color:maroon;">
-<header id="navbar">
-  <div class="navbar-container container">
-    <a href="/" class="home-link">
-      <div class="navbar-logo"></div>
-      
-    </a>
-    <button type="button" id="navbar-toggle" aria-controls="navbar-menu" aria-label="Toggle menu" aria-expanded="false">
-      <span class="icon-bar"></span>
-      <span class="icon-bar"></span>
-      <span class="icon-bar"></span>
-    </button>
-    <div id="navbar-menu" aria-labelledby="navbar-toggle">
-<ul class="bar">
-  <li class="navbar-item"><a class="navbar-link" href="/index.html">home</a></li>
-
-<li class="navbar-item"><a class="navbar-link" href="/index a .html">About</a></li>
-
-<li class="navbar-item"><a class="navbar-link" href="/index c.html">Contact</a></li>
-</ul>
+<!-- this is the nav bar color css -->
+</head>
+<body style="background-color:maroon;"><!-- this is start of body and back ground color-->
+<div class="container">
+  <header id="navbar">
+    <nav class="navbar-container container">
+      <a href="/" class="home-link">
+        <div class="navbar-logo"></div>
+       
+      </a>
+      <button type="button" id="navbar-toggle" aria-controls="navbar-menu" aria-label="Toggle menu" aria-expanded="false">
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+      <div id="navbar-menu" aria-labelledby="navbar-toggle">
+  <ul class="bar">
+    <li class="navbar-item"><a class="navbar-link" href="/index.html">home</a></li>
+  
+  <li class="navbar-item"><a class="navbar-link" href="/index a .html">About</a></li>
+  
+  <li class="navbar-item"><a class="navbar-link" href="/index c.html">Contact</a></li>
+  </ul><!-- this is the nav bar on the -->
 </div>
-<script>
-const navbarToggle = navbar.querySelector("#navbar-toggle");
+  <script>
+  const navbarToggle = navbar.querySelector("#navbar-item");
 
-let isNavbarExpanded = navbarToggle.getAttribute("aria-expanded") === "true";
-
-const toggleNavbarVisibility = () => {
-  isNavbarExpanded = !isNavbarExpanded;
-  navbarToggle.setAttribute("aria-expanded", isNavbarExpanded);
-};
-
-
-
-navbarLinksContainer.addEventListener("click", (e) => e.stopPropagation());
-navbarMenu.addEventListener("click", toggleNavbarVisibility);
+  let isNavbarExpanded = navbarToggle.getAttribute("aria-expanded") === "true";
+  
+  const toggleNavbarVisibility = () => {
+    isNavbarExpanded = !isNavbarExpanded;
+    navbarToggle.setAttribute("aria-expanded", isNavbarExpanded);
+  };
+  
+  navbarLinksContainer.addEventListener("click", (e) => e.stopPropagation());
+  navbarMenu.addEventListener("click", toggleNavbarVisibility);
 </script>
-
+<!--nav bar coding to go to other pages.-->
+</span>
 <p>welcome to my web page project.1</p>
-
+<!-- this is a welcome to the page-->
 
 <p> My name is porter barrett i am a student at kennesaw state university. I like to play video games and watch tv in my free time.</p>
+<!--this is an introdution about me-->
 </body>
 </html>
